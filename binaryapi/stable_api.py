@@ -170,7 +170,7 @@ class Binary:
             return False, None, req_id
 
         # TODO
-        return True, res['buy']['contract_id'], req_id
+        return True, self.message_callback, res['buy']['contract_id'], req_id
 
     buy = buy_call_put
 
